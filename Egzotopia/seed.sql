@@ -175,6 +175,7 @@ INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity
 (13, 10, 4, 'Büyük Kedi Tırmalama Kütüğü', 1, 3500.00),
 (14, 11, 5, 'Güçlendirilmiş Et Takviyesi', 1, 850.00);
 
+  
 -- 5. MIGRATION GEÇMİŞİNİ KAYDET (Önemli)
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion") VALUES 
 ('20251210002629_AddCheckoutFields', '8.0.11'),
