@@ -95,6 +95,31 @@ namespace Egzotopia
                             Console.WriteLine("⚠️ seed.sql dosyası bulunamadı. (Properties ayarını kontrol et)");
                         }
                     }
+
+                    // 3. 🔴 SAYAÇ TAMİRİ (BUNU EKLEDİM) 🔴
+                    // Veriler seed ile yüklendiği için ID sayacı geride kalıyor. Bunu düzeltiyoruz.
+                    // Yoksa "Kayıt Ol" dediğinde hata alırsın.
+                    try
+                    {
+                        // Users Tablosu
+                        context.Database.ExecuteSqlRaw("SELECT setval(pg_get_serial_sequence('\"Users\"', 'Id'), COALESCE((SELECT MAX(\"Id\") + 1 FROM \"Users\"), 1), false);");
+
+                        // Products Tablosu
+                        context.Database.ExecuteSqlRaw("SELECT setval(pg_get_serial_sequence('\"Products\"', 'Id'), COALESCE((SELECT MAX(\"Id\") + 1 FROM \"Products\"), 1), false);");
+
+                        // Orders Tablosu
+                        context.Database.ExecuteSqlRaw("SELECT setval(pg_get_serial_sequence('\"Orders\"', 'Id'), COALESCE((SELECT MAX(\"Id\") + 1 FROM \"Orders\"), 1), false);");
+
+                        // OrderItems Tablosu
+                        context.Database.ExecuteSqlRaw("SELECT setval(pg_get_serial_sequence('\"OrderItems\"', 'Id'), COALESCE((SELECT MAX(\"Id\") + 1 FROM \"OrderItems\"), 1), false);");
+
+                        Console.WriteLine("✅ ID Sayaçları (Sequences) başarıyla tamir edildi.");
+                    }
+                    catch (Exception ex)
+                    {
+                        // Tablo henüz boşsa veya başka bir sorun varsa site çökmesin, devam etsin
+                        Console.WriteLine("⚠️ Sayaç tamiri atlandı: " + ex.Message);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -113,7 +138,7 @@ namespace Egzotopia
             app.Run();
         }
 
-        // --- URL PARÇALAYICI (HATA BURADAYDI, DÜZELTİLDİ) ---
+        // --- URL PARÇALAYICI ---
         private static string BuildConnectionString(string databaseUrl)
         {
             var databaseUri = new Uri(databaseUrl);
@@ -122,7 +147,7 @@ namespace Egzotopia
             var builder = new NpgsqlConnectionStringBuilder
             {
                 Host = databaseUri.Host,
-                // DÜZELTME BURADA: Eğer Port -1 gelirse, varsayılan 5432 kullan.
+                // Port hatasını düzelten kısım:
                 Port = databaseUri.Port > 0 ? databaseUri.Port : 5432,
                 Username = userInfo[0],
                 Password = userInfo[1],

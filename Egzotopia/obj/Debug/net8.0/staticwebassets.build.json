@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qamK1JwGKSC/X1tfpG3VRgawgChnwgOlrTrIUtYjgwQ=",
+  "Hash": "P1Mvdy0FLXHySzQrV+JbJtOoymF5L2kk6P+pHRfwhxc=",
   "Source": "Egzotopia",
   "BasePath": "_content/Egzotopia",
   "Mode": "Default",
@@ -1155,6 +1155,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Muhmm\\OneDrive\\Masaüstü\\Egzotopia\\Egzotopia\\wwwroot\\logo.png",
+      "SourceId": "Egzotopia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Muhmm\\OneDrive\\Masaüstü\\Egzotopia\\Egzotopia\\wwwroot\\",
+      "BasePath": "_content/Egzotopia",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }

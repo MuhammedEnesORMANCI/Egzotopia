@@ -238,3 +238,4 @@ C:\Users\Muhmm\OneDrive\Masaüstü\Egzotopia\Egzotopia\bin\Debug\net8.0\runtimes
 C:\Users\Muhmm\OneDrive\Masaüstü\Egzotopia\Egzotopia\bin\Debug\net8.0\Npgsql.dll
 C:\Users\Muhmm\OneDrive\Masaüstü\Egzotopia\Egzotopia\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Muhmm\OneDrive\Masaüstü\Egzotopia\Egzotopia\obj\Debug\net8.0\Egzotopia.sourcelink.json
+C:\Users\Muhmm\OneDrive\Masaüstü\Egzotopia\Egzotopia\bin\Debug\net8.0\seed.sql
