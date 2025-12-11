@@ -25,4 +25,10 @@
 	  <Folder Include="Pages\Admin\ManageOrders\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="seed.sql">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
 </Project>
