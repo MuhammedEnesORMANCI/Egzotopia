@@ -12,7 +12,7 @@ namespace Egzotopia
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // ✅ Razor Pages (MVC değil!)
+            // ✅ Razor Pages
             builder.Services.AddRazorPages();
             builder.Services.AddHttpContextAccessor();
 
@@ -22,32 +22,42 @@ namespace Egzotopia
             builder.Services.AddTransient<Egzotopia.Services.EmailService>();
 
             // 1. API Ninjas HttpClient Konfigürasyonu
-            // Program.cs dosyasındaki mevcut yerini bulun ve bu kodla değiştirin:
-
-            // 1. API Ninjas HttpClient Konfigürasyonu
             builder.Services.AddHttpClient("ApiNinjasClient", client =>
             {
-                var apiKey = builder.Configuration["ApiKeys:ApiNinjasKey"]; // Anahtarı çek
+                var apiKey = builder.Configuration["ApiKeys:ApiNinjasKey"];
                 client.BaseAddress = new Uri("https://api.api-ninjas.com/");
-                client.DefaultRequestHeaders.Add("X-Api-Key", apiKey);
+                // Eğer key null gelirse hata vermemesi için kontrol
+                if (!string.IsNullOrEmpty(apiKey))
+                    client.DefaultRequestHeaders.Add("X-Api-Key", apiKey);
             });
 
             // 2. Pexels HttpClient Konfigürasyonu
             builder.Services.AddHttpClient("PexelsClient", client =>
             {
-                var apiKey = builder.Configuration["ApiKeys:PexelsKey"]; // Anahtarı çek
+                var apiKey = builder.Configuration["ApiKeys:PexelsKey"];
                 client.BaseAddress = new Uri("https://api.pexels.com/v1/");
-                client.DefaultRequestHeaders.Add("Authorization", apiKey);
+                if (!string.IsNullOrEmpty(apiKey))
+                    client.DefaultRequestHeaders.Add("Authorization", apiKey);
             });
 
-            // Entity Framework Core SQL Server DbContext konfigurasyonu
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            // --- DEĞİŞİKLİK BURADA BAŞLIYOR (RENDER İÇİN) ---
 
+            // 1. Render'daki bağlantı adresini al
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+
+            // 2. Eğer Render'da değilsek (Local), appsettings.json'dan al
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            }
+
+            // 3. PostgreSQL Bağlantısını Yap (UseSqlServer YERİNE UseNpgsql)
             builder.Services.AddDbContext<EgZotopiaDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                options.UseNpgsql(connectionString));
 
-            // Logging ekle (debug için)
+            // --------------------------------------------------
+
+            // Logging
             builder.Logging.ClearProviders();
             builder.Logging.AddConsole();
 
@@ -60,14 +70,25 @@ namespace Egzotopia
 
             var app = builder.Build();
 
-            // --- ESKİ HALİNİ YORUMA ALIN VEYA SİLİN ---
-            // if (!app.Environment.IsDevelopment())
-            // {
-            //     app.UseExceptionHandler("/Error");
-            //     app.UseHsts();
-            // }
+            // --- OTOMATİK TABLO OLUŞTURMA (RENDER İÇİN KRİTİK) ---
+            // Bu kod site açılırken veritabanı tabloları yoksa oluşturur.
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                try
+                {
+                    var context = services.GetRequiredService<EgZotopiaDbContext>();
+                    // Veritabanını ve tabloları oluşturur
+                    context.Database.Migrate();
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "Veritabanı oluşturulurken hata meydana geldi.");
+                }
+            }
+            // -----------------------------------------------------
 
-            // --- YERİNE SADECE BUNU YAZIN ---
             app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();

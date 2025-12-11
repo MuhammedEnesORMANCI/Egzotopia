@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aMpm2tX0zco=",
+  "dgSpecHash": "+ljugJY8NhQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Muhmm\\OneDrive\\Masaüstü\\Egzotopia\\Egzotopia\\Egzotopia.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,8 @@
     "C:\\Users\\Muhmm\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Muhmm\\.nuget\\packages\\mimekit\\4.14.0\\mimekit.4.14.0.nupkg.sha512",
     "C:\\Users\\Muhmm\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Muhmm\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
+    "C:\\Users\\Muhmm\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "C:\\Users\\Muhmm\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Muhmm\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Muhmm\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",

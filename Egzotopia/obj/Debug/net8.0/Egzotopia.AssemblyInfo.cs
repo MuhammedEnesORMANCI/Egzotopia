@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Egzotopia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2899526ea5af3110c56efe720454daf747dc78c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Egzotopia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Egzotopia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
