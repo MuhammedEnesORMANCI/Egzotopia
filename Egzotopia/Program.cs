@@ -3,7 +3,7 @@ using Egzotopia.Services.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Egzotopia.Data;
-using Npgsql; // Bunu eklediğinden emin ol
+using Npgsql; // Npgsql kütüphanesi gerekli
 
 namespace Egzotopia
 {
@@ -13,11 +13,9 @@ namespace Egzotopia
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Razor Pages
+            // Razor Pages ve Servisler
             builder.Services.AddRazorPages();
             builder.Services.AddHttpContextAccessor();
-
-            // Servisler
             builder.Services.AddScoped<IAnimalService, AnimalApiService>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddTransient<Egzotopia.Services.EmailService>();
@@ -27,62 +25,35 @@ namespace Egzotopia
             {
                 var apiKey = builder.Configuration["ApiKeys:ApiNinjasKey"];
                 client.BaseAddress = new Uri("https://api.api-ninjas.com/");
-                if (!string.IsNullOrEmpty(apiKey))
-                    client.DefaultRequestHeaders.Add("X-Api-Key", apiKey);
+                if (!string.IsNullOrEmpty(apiKey)) client.DefaultRequestHeaders.Add("X-Api-Key", apiKey);
             });
 
             builder.Services.AddHttpClient("PexelsClient", client =>
             {
                 var apiKey = builder.Configuration["ApiKeys:PexelsKey"];
                 client.BaseAddress = new Uri("https://api.pexels.com/v1/");
-                if (!string.IsNullOrEmpty(apiKey))
-                    client.DefaultRequestHeaders.Add("Authorization", apiKey);
+                if (!string.IsNullOrEmpty(apiKey)) client.DefaultRequestHeaders.Add("Authorization", apiKey);
             });
 
-            // --- VERİTABANI BAĞLANTISI (DÜZELTİLEN KISIM) ---
+            // --------------------------------------------------
+            // 🔴 KRİTİK DÜZELTME: BAĞLANTI ADRESİ DÖNÜŞTÜRME
+            // --------------------------------------------------
 
-            var connectionString = "";
+            string connectionString = "";
+            var renderConnectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
 
-            // 1. Önce Render'dan gelen adresi al
-            var databaseUrl = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
-
-            // 2. Eğer Render'daysak (URL doluysa), bunu Npgsql formatına çevir
-            if (!string.IsNullOrEmpty(databaseUrl))
+            if (!string.IsNullOrEmpty(renderConnectionString))
             {
-                try
-                {
-                    // Render URL'si: postgres://user:password@host:port/database
-                    var databaseUri = new Uri(databaseUrl);
-                    var userInfo = databaseUri.UserInfo.Split(':');
-
-                    var builderDb = new NpgsqlConnectionStringBuilder
-                    {
-                        Host = databaseUri.Host,
-                        Port = databaseUri.Port,
-                        Username = userInfo[0],
-                        Password = userInfo[1],
-                        Database = databaseUri.LocalPath.TrimStart('/'),
-                        SslMode = SslMode.Require, // Render SSL ister
-                        TrustServerCertificate = true
-                    };
-
-                    connectionString = builderDb.ToString();
-                    Console.WriteLine("✅ Render veritabanı adresi başarıyla dönüştürüldü.");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("❌ URL dönüştürme hatası: " + ex.Message);
-                    // Hata olursa ham haliyle deneyelim
-                    connectionString = databaseUrl;
-                }
+                // Render'dayız, URL'yi parçalayıp Npgsql formatına çeviriyoruz
+                connectionString = BuildConnectionString(renderConnectionString);
             }
             else
             {
-                // 3. Render'da değilsek yerel ayarı kullan
+                // Localdeyiz (Bilgisayarın)
                 connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             }
 
-            // 4. PostgreSQL'i başlat
+            // PostgreSQL Bağlantısı
             builder.Services.AddDbContext<EgZotopiaDbContext>(options =>
                 options.UseNpgsql(connectionString));
 
@@ -101,16 +72,18 @@ namespace Egzotopia
 
             var app = builder.Build();
 
-            // --- TABLO OLUŞTURMA VE SEED ---
+            // --- TABLO OLUŞTURMA VE VERİ YÜKLEME ---
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
                 try
                 {
                     var context = services.GetRequiredService<EgZotopiaDbContext>();
-                    context.Database.Migrate(); // Tabloları oluştur
 
-                    // Seed SQL'i çalıştır
+                    // 1. Veritabanını oluştur
+                    context.Database.Migrate();
+
+                    // 2. Seed SQL dosyasını yükle (Sadece boşsa)
                     if (!context.Users.Any())
                     {
                         var sqlFile = Path.Combine(AppContext.BaseDirectory, "seed.sql");
@@ -118,14 +91,14 @@ namespace Egzotopia
                         {
                             var sqlScript = File.ReadAllText(sqlFile);
                             context.Database.ExecuteSqlRaw(sqlScript);
-                            Console.WriteLine("✅ seed.sql yüklendi.");
+                            Console.WriteLine("✅ seed.sql başarıyla yüklendi.");
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "❌ Veritabanı başlatma hatası.");
+                    // Hatayı logla ama uygulamayı durdurma
+                    Console.WriteLine($"❌ Veritabanı başlatma hatası: {ex.Message}");
                 }
             }
 
@@ -138,6 +111,28 @@ namespace Egzotopia
             app.MapRazorPages();
 
             app.Run();
+        }
+
+        // --- YARDIMCI METOT: URL PARÇALAYICI ---
+        // Render'ın verdiği "postgres://user:pass@host/db" formatını
+        // C#'ın istediği "Host=...;Username=..." formatına çevirir.
+        private static string BuildConnectionString(string databaseUrl)
+        {
+            var databaseUri = new Uri(databaseUrl);
+            var userInfo = databaseUri.UserInfo.Split(':');
+
+            var builder = new NpgsqlConnectionStringBuilder
+            {
+                Host = databaseUri.Host,
+                Port = databaseUri.Port,
+                Username = userInfo[0],
+                Password = userInfo[1],
+                Database = databaseUri.LocalPath.TrimStart('/'),
+                SslMode = SslMode.Require,
+                TrustServerCertificate = true // SSL sertifika hatasını önler
+            };
+
+            return builder.ToString();
         }
     }
 }
