@@ -26,7 +26,6 @@ namespace Egzotopia
             {
                 var apiKey = builder.Configuration["ApiKeys:ApiNinjasKey"];
                 client.BaseAddress = new Uri("https://api.api-ninjas.com/");
-                // Eğer key null gelirse hata vermemesi için kontrol
                 if (!string.IsNullOrEmpty(apiKey))
                     client.DefaultRequestHeaders.Add("X-Api-Key", apiKey);
             });
@@ -40,7 +39,7 @@ namespace Egzotopia
                     client.DefaultRequestHeaders.Add("Authorization", apiKey);
             });
 
-            // --- DEĞİŞİKLİK BURADA BAŞLIYOR (RENDER İÇİN) ---
+            // --- RENDER İÇİN VERİTABANI BAĞLANTISI ---
 
             // 1. Render'daki bağlantı adresini al
             var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
@@ -51,11 +50,9 @@ namespace Egzotopia
                 connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             }
 
-            // 3. PostgreSQL Bağlantısını Yap (UseSqlServer YERİNE UseNpgsql)
+            // 3. PostgreSQL Bağlantısını Yap
             builder.Services.AddDbContext<EgZotopiaDbContext>(options =>
                 options.UseNpgsql(connectionString));
-
-            // --------------------------------------------------
 
             // Logging
             builder.Logging.ClearProviders();
@@ -70,21 +67,43 @@ namespace Egzotopia
 
             var app = builder.Build();
 
-            // --- OTOMATİK TABLO OLUŞTURMA (RENDER İÇİN KRİTİK) ---
-            // Bu kod site açılırken veritabanı tabloları yoksa oluşturur.
+            // --- OTOMATİK TABLO VE VERİ YÜKLEME (RENDER İÇİN KRİTİK) ---
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
                 try
                 {
                     var context = services.GetRequiredService<EgZotopiaDbContext>();
-                    // Veritabanını ve tabloları oluşturur
+
+                    // 1. ADIM: Tabloları oluştur (Yoksa)
                     context.Database.Migrate();
+
+                    // 2. ADIM: Veri var mı diye kontrol et
+                    // Eğer kullanıcı tablosu boşsa, veritabanı boş demektir.
+                    if (!context.Users.Any())
+                    {
+                        // seed.sql dosyasının yolunu bul
+                        var sqlFile = Path.Combine(AppContext.BaseDirectory, "seed.sql");
+
+                        // Dosyayı oku ve veritabanına bas
+                        if (File.Exists(sqlFile))
+                        {
+                            var sqlScript = File.ReadAllText(sqlFile);
+                            context.Database.ExecuteSqlRaw(sqlScript);
+                            var logger = services.GetRequiredService<ILogger<Program>>();
+                            logger.LogInformation("✅ seed.sql başarıyla çalıştırıldı ve veriler yüklendi.");
+                        }
+                        else
+                        {
+                            var logger = services.GetRequiredService<ILogger<Program>>();
+                            logger.LogWarning("⚠️ seed.sql dosyası bulunamadı! (Properties -> Copy to Output Directory ayarını kontrol et)");
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "Veritabanı oluşturulurken hata meydana geldi.");
+                    logger.LogError(ex, "❌ Veritabanı başlatılırken hata oluştu.");
                 }
             }
             // -----------------------------------------------------
