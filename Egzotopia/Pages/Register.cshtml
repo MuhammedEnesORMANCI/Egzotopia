@@ -1,0 +1,59 @@
+﻿@page
+@model Egzotopia.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h3 class="card-title mb-0">🦁 Egzotopia'ya Katıl</h3>
+                </div>
+                <div class="card-body">
+
+                    @if (!string.IsNullOrEmpty(Model.DebugError))
+                    {
+                        <div class="alert alert-danger fw-bold">
+                            @Model.DebugError
+                        </div>
+                    }
+
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="mb-3">
+                            <label class="form-label">Ad Soyad</label>
+                            <input type="text" name="FullName" class="form-control" required value="@Model.FullName" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">E-posta</label>
+                            <input type="email" name="Email" class="form-control" required value="@Model.Email" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Şifre</label>
+                            <input type="password" name="Password" class="form-control" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Şifre (Tekrar)</label>
+                            <input type="password" name="ConfirmPassword" class="form-control" required />
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" name="AgreeTerms" value="true" class="form-check-input" id="terms" />
+                            <label class="form-check-label" for="terms">
+                                Şartları kabul ediyorum.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Kayıt Ol</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

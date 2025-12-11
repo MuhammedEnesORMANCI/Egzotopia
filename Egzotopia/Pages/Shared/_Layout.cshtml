@@ -1,0 +1,180 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    // Session verilerini alıyoruz
+    var userId = HttpContextAccessor.HttpContext.Session.GetString("UserId");
+    var userEmail = HttpContextAccessor.HttpContext.Session.GetString("UserEmail");
+    var userFullName = HttpContextAccessor.HttpContext.Session.GetString("UserFullName");
+    var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+
+    // İsim varsa ismi, yoksa emaili göster
+    var displayName = !string.IsNullOrEmpty(userFullName) ? userFullName : userEmail;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Egzotopia</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="/" style="font-size: 1.5rem;">
+                    🦁 Egzotopia
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item"><a class="nav-link text-dark" href="/">Ana Sayfa</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="/Animals">Hayvanlar</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="/SearchAnimals">🔍 Hayvan Ara</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="/Products">Ürünler</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="/About">Hakkımızda</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item me-3">
+                            <button id="darkModeToggle" class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-moon-fill"></i> Mod
+                            </button>
+                        </li>
+
+                        <li class="nav-item me-3">
+                            <a class="btn btn-outline-success position-relative" href="/Cart">
+                                <i class="bi bi-cart-fill"></i> Sepet
+                            </a>
+                        </li>
+
+                        @if (!string.IsNullOrEmpty(userId))
+                        {
+                            // --- GİRİŞ YAPMIŞ ---
+
+                            // Admin Paneli Linki
+                            if (userRole == "1" || userRole == "2")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold text-danger" href="/Admin/Dashboard">
+                                        <i class="bi bi-shield-lock-fill"></i> Panel
+                                    </a>
+                                </li>
+                            }
+
+                            // Profil Menüsü
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    👤 @displayName
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/Profile">👤 Profilim</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-danger" href="/Logout">🚪 Çıkış Yap</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            // --- MİSAFİR ---
+                            // ESKİ HALİ: Direkt /Login ve /Register sayfalarına gider
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="/Login">Giriş Yap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary ms-2 text-white" href="/Register">Kayıt Ol</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-light mt-5 pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-success fw-bold">🦁 Egzotopia</h5>
+                    <p class="small">Egzotik hayvanlar dünyasını keşfedin.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">Hızlı Linkler</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/Animals" class="text-decoration-none text-muted">Hayvanlar</a></li>
+                        <li><a href="/Products" class="text-decoration-none text-muted">Ürünler</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">İletişim</h5>
+                    <p class="small">info@egzotopia.com</p>
+                </div>
+            </div>
+            <hr />
+            <div class="text-center small">
+                &copy; 2025 Egzotopia
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        $(document).ready(function () {
+            const toggleButton = $('#darkModeToggle');
+            const body = $('body');
+            const mainNavbar = $('#mainNavbar');
+
+            if (toggleButton.length === 0) return;
+
+            const lightClasses = 'navbar-light bg-white';
+            const darkClasses = 'navbar-dark bg-dark';
+
+            function setDarkMode(isDark) {
+                if (isDark) {
+                    body.addClass('dark-mode');
+                    mainNavbar.removeClass(lightClasses).addClass(darkClasses);
+                    toggleButton.html('<i class="bi bi-sun-fill"></i> Aydınlık');
+                    toggleButton.removeClass('btn-outline-secondary').addClass('btn-outline-light');
+                } else {
+                    body.removeClass('dark-mode');
+                    mainNavbar.removeClass(darkClasses).addClass(lightClasses);
+                    toggleButton.html('<i class="bi bi-moon-fill"></i> Karanlık');
+                    toggleButton.removeClass('btn-outline-light').addClass('btn-outline-secondary');
+                }
+                localStorage.setItem('darkMode', isDark);
+            }
+
+            const savedMode = localStorage.getItem('darkMode');
+            if (savedMode === 'true') {
+                setDarkMode(true);
+            } else {
+                setDarkMode(false);
+            }
+
+            toggleButton.on('click', () => {
+                const isCurrentlyDark = body.hasClass('dark-mode');
+                setDarkMode(!isCurrentlyDark);
+            });
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

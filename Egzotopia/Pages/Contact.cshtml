@@ -1,0 +1,42 @@
+﻿@page
+@model Egzotopia.Pages.ContactModel
+@{
+    ViewData["Title"] = "İletişim";
+}
+
+<div class="container mt-5">
+    <h1 class="display-4">📞 İletişim</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Bize Ulaşın</h3>
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Adınız</label>
+                    <input type="text" class="form-control" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">E-posta</label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Konu</label>
+                    <input type="text" class="form-control" name="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mesaj</label>
+                    <textarea class="form-control" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3>İletişim Bilgileri</h3>
+            <p><strong>📧 E-posta:</strong> info@egzotopia.com</p>
+            <p><strong>📞 Telefon:</strong> +90 (212) 123 4567</p>
+            <p><strong>🏢 Adres:</strong> İstanbul, Türkiye</p>
+            <p><strong>⏰ Çalışma Saatleri:</strong> Pazartesi - Cuma: 09:00 - 18:00</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,164 @@
+﻿@page "/AnimalDetail"
+@model Egzotopia.Pages.AnimalDetailModel
+@{
+    ViewData["Title"] = Model.Animal?.Name ?? "Hayvan Detayı";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="container mt-5">
+
+    <div id="toast-container" class="position-fixed top-0 end-0 p-3" style="z-index: 1055">
+        <div id="liveToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toast-message"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    @if (Model.Animal != null)
+    {
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="card shadow border-0 overflow-hidden">
+                    <img src="@Model.Animal.ImageUrl"
+                         class="img-fluid w-100"
+                         alt="@Model.Animal.Name"
+                         style="height: 400px; object-fit: cover;"
+                         onerror="this.src='https://via.placeholder.com/600x400?text=Resim+Yok'">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h1 class="display-4 fw-bold text-success text-uppercase">@Model.Animal.Name</h1>
+                <h4 class="text-muted fst-italic mb-4">@Model.Animal.ScientificName</h4>
+
+                <div class="card bg-light border-0 shadow-sm">
+                    <div class="card-body">
+                        <p class="mb-2"><i class="bi bi-geo-alt-fill text-danger"></i> <strong>Habitat:</strong> @Model.Animal.Habitat</p>
+                        <hr>
+                        <p class="mb-0"><i class="bi bi-info-circle-fill text-primary"></i> <strong>Bilgi:</strong> <br> @Model.Animal.Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-4 pb-2 border-bottom border-success">
+                    🛍️ @Model.Animal.Name İçin Önerilen Ürünler
+                </h3>
+            </div>
+
+            @if (Model.RelatedProducts != null && Model.RelatedProducts.Any())
+            {
+                @foreach (var product in Model.RelatedProducts)
+                {
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 shadow-sm product-card hover-shadow">
+
+                            <a href="/ProductDetail/@product.Id" class="text-decoration-none">
+                                <div style="height: 200px; overflow: hidden; background: #f8f9fa;">
+                                    <img src="@product.ImageUrl" class="card-img-top h-100 w-100" style="object-fit: cover;" alt="@product.Name"
+                                         onerror="this.src='https://via.placeholder.com/300x300?text=Resim+Yok'">
+                                </div>
+                            </a>
+
+                            <div class="card-body text-center d-flex flex-column">
+                                <a href="/ProductDetail/@product.Id" class="text-decoration-none text-dark">
+                                    <h5 class="card-title text-truncate fw-bold hover-underline" title="@product.Name">@product.Name</h5>
+                                </a>
+
+                                <p class="text-muted small mb-2">@product.ProductType</p>
+
+                                <h4 class="text-success my-2">@product.Price.ToString("C2")</h4>
+
+                                <div class="mt-auto">
+                                    @if (product.StockQuantity > 0)
+                                    {
+                                        <button class="btn btn-outline-success w-100 btn-sm rounded-pill"
+                                                onclick="addToCart(@product.Id, '@product.Name', @product.Price)">
+                                            <i class="bi bi-cart-plus"></i> Sepete Ekle
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-secondary w-100 btn-sm rounded-pill" disabled>Tükendi</button>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12">
+                    <div class="alert alert-warning text-center p-5 shadow-sm">
+                        <h4>😔 Üzgünüz, bu hayvan için henüz ürün eklenmemiş.</h4>
+                        <p>Yöneticilerimiz en kısa sürede <strong>@Model.Animal.Name</strong> için özel ürünler ekleyecek.</p>
+                        <a href="/Products" class="btn btn-outline-dark mt-2">Tüm Ürünlere Göz At</a>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="mt-4 mb-5">
+            <a href="/Animals" class="btn btn-dark">← Hayvanlara Dön</a>
+        </div>
+    }
+</div>
+
+<style>
+    .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+
+    .hover-underline:hover {
+        text-decoration: underline !important;
+        color: #198754 !important;
+    }
+</style>
+
+<script>
+    function addToCart(id, name, price) {
+        var formData = new FormData();
+        formData.append('productId', id);
+        formData.append('name', name);
+        formData.append('price', price.toString().replace(',', '.'));
+
+        // Products sayfasındaki aynı Handler'ı kullanıyoruz
+        // Not: Burada Handler'ı AnimalDetail.cshtml.cs içinde de tanımlayabiliriz
+        // VEYA Products sayfasına istek atabiliriz.
+        // Şimdilik AnimalDetail.cshtml.cs'e OnPostAddToCart eklemen lazım.
+
+        var token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+        fetch('?handler=AddToCart', {
+            method: 'POST',
+            body: formData,
+            headers: { "RequestVerificationToken": token }
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message);
+                } else {
+                    alert("Hata: " + data.message);
+                }
+            })
+            .catch(error => { console.error('Error:', error); });
+    }
+
+    function showToast(message) {
+        var toastEl = document.getElementById('liveToast');
+        document.getElementById('toast-message').innerText = message;
+        var toast = new bootstrap.Toast(toastEl);
+        toast.show();
+    }
+</script>

@@ -1,0 +1,75 @@
+﻿@page "/Admin/ManageUsers"
+@model Egzotopia.Pages.Admin.ManageUsers.IndexModel
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Kullanıcı Yönetimi";
+}
+
+<div class="container-fluid mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 mb-0 text-gray-800">👥 Kullanıcı Yönetimi</h1>
+        <span class="badge bg-warning text-dark px-3 py-2">Süper Admin</span>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 bg-dark text-white">
+            <h6 class="m-0 font-weight-bold">Kayıtlı Kullanıcılar</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Ad Soyad</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                            <th style="width: 180px;">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model.Users)
+                        {
+                            <tr>
+                                <td>@user.Id</td>
+                                <td>@user.FullName</td>
+                                <td>@user.Email</td>
+                                <td>
+                                    @if (user.Role == 0)
+                                    {
+                                        <span class="badge bg-secondary">Üye</span>
+                                    }
+                                    else if (user.Role == 1)
+                                    {
+                                        <span class="badge bg-primary">Admin</span>
+                                    }
+                                    else if (user.Role == 2)
+                                    {
+                                        <span class="badge bg-danger">Süper Admin</span>
+                                    }
+                                </td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="/Admin/ManageUsers/Edit/@user.Id" class="btn btn-warning btn-sm">
+                                            ✏️ Düzenle
+                                        </a>
+
+                                        <form method="post">
+                                            @Html.AntiForgeryToken()
+
+                                            <input type="hidden" name="userId" value="@user.Id" />
+
+                                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Silmek istediğine emin misin?');">
+                                                🗑️ Sil
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

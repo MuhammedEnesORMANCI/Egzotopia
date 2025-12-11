@@ -1,0 +1,109 @@
+﻿@page
+@model Egzotopia.Pages.CartModel
+@{
+    ViewData["Title"] = "Sepet";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">🛒 Alışveriş Sepeti</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    @if (Model.CartItems == null || Model.CartItems.Count == 0)
+                    {
+                        <div class="alert alert-info text-center p-4">
+                            <h4 class="alert-heading">Sepetinizde ürün bulunmamaktadır.</h4>
+                            <a href="/Products" class="btn btn-primary mt-2">Alışverişe Başla</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Ürün</th>
+                                    <th>Fiyat</th>
+                                    <th>Miktar</th>
+                                    <th>Toplam</th>
+                                    <th>İşlem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.CartItems)
+                                {
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>@item.Price.ToString("C2")</td>
+                                        <td>
+                                            <form method="post" asp-page-handler="UpdateQuantity" class="d-flex">
+                                                @Html.AntiForgeryToken()
+
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+
+                                                <input type="number"
+                                                       name="quantity"
+                                                       value="@item.Quantity"
+                                                       min="1"
+                                                       class="form-control form-control-sm"
+                                                       style="width: 80px;"
+                                                       onchange="this.form.submit()"> @* Değişiklik olunca otomatik gönder *@
+                                            </form>
+                                        </td>
+                                        <td>@item.Total.ToString("C2")</td>
+                                        <td>
+                                            <form method="post" asp-page-handler="Remove" onsubmit="return confirm('Silmek istediğine emin misin?');">
+                                                @Html.AntiForgeryToken()
+
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                                <button class="btn btn-danger btn-sm">
+                                                    <i class="bi bi-trash"></i> Sil
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm sticky-top" style="top: 20px;">
+                <div class="card-body">
+                    <h5 class="card-title">Sipariş Özeti</h5>
+                    <hr />
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Ara Toplam:</span>
+                        <strong>@Model.Subtotal.ToString("C2")</strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Kargo:</span>
+                        <strong>@Model.ShippingCost.ToString("C2")</strong>
+                    </div>
+
+                    <hr />
+
+                    <div class="d-flex justify-content-between mb-4">
+                        <h6>Genel Toplam:</h6>
+                        <h5 class="text-success fw-bold">@Model.Total.ToString("C2")</h5>
+                    </div>
+
+                    @if (Model.CartItems != null && Model.CartItems.Count > 0)
+                    {
+                        <a href="/Checkout" class="btn btn-success w-100 btn-lg">Ödemeye Geç</a>
+                    }
+                    else
+                    {
+                        <button class="btn btn-secondary w-100 btn-lg" disabled>Sepet Boş</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

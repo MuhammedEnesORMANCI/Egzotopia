@@ -1,0 +1,40 @@
+﻿@page
+@model Egzotopia.Pages.ConfirmRegisterModel
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark">
+                    <h4 class="mb-0">📧 Son Bir Adım!</h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-center">
+                        Lütfen <strong>@Model.SentEmail</strong> adresine gönderdiğimiz
+                        <br>6 haneli kodu aşağıya giriniz.
+                    </p>
+
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-group mb-3">
+                            <label class="fw-bold">Doğrulama Kodu</label>
+                            <input type="text" name="Code" class="form-control text-center"
+                                   style="font-size: 24px; letter-spacing: 5px;"
+                                   placeholder="XXXXXX" required />
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 py-2">Kaydı Tamamla</button>
+                    </form>
+
+                    @if (!string.IsNullOrEmpty(Model.Message))
+                    {
+                        <div class="alert alert-danger mt-3 fw-bold text-center">
+                            @Model.Message
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

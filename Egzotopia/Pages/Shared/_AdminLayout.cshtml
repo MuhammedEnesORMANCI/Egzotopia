@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    // Session'dan kullanıcının rolünü çekiyoruz
+    var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Egzotopia Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Admin/Dashboard">🔐 Egzotopia Admin</a>
+            <div class="d-flex">
+                <a href="/" class="text-white me-3">Ana Sayfaya Dön</a>
+                <a href="/Logout" class="text-white">Çıkış</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-light p-4" style="min-height: 100vh;">
+                <h5 class="mb-4">Menü</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/Admin/Dashboard" class="nav-link">📊 Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Admin/ManageAnimals" class="nav-link">🦁 Hayvanlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Admin/ManageProducts" class="nav-link">🛍️ Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Admin/Orders" class="nav-link">📦 Siparişler</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

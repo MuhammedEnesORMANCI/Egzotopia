@@ -1,0 +1,26 @@
+﻿@page
+@model Egzotopia.Pages.OrderSuccessModel
+@{
+    ViewData["Title"] = "Sipariş Alındı";
+}
+
+<div class="container mt-5 text-center">
+    <div class="card shadow p-5 border-0">
+        <div class="mb-4 text-success">
+            <i class="bi bi-check-circle-fill" style="font-size: 5rem;"></i>
+        </div>
+        <h1 class="display-4 fw-bold text-success">Teşekkürler!</h1>
+        <p class="lead">Siparişiniz başarıyla alınmıştır.</p>
+
+        <div class="alert alert-light border d-inline-block px-5 py-3 mt-3">
+            <strong>Sipariş Numaranız:</strong> <span class="fs-4 text-primary">#@Model.OrderId</span>
+        </div>
+
+        <p class="mt-4 text-muted">Sipariş detaylarınız e-posta adresinize gönderildi.</p>
+
+        <div class="mt-4">
+            <a href="/" class="btn btn-primary btn-lg">Ana Sayfaya Dön</a>
+            <a href="/Products" class="btn btn-outline-secondary btn-lg">Alışverişe Devam Et</a>
+        </div>
+    </div>
+</div>

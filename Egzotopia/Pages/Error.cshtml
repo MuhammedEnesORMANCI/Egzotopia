@@ -1,0 +1,15 @@
+﻿@page
+@model Egzotopia.Pages.ErrorModel
+@{
+    ViewData["Title"] = "Hata";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-1">⚠️</h1>
+        <h2 class="display-4">Bir Hata Oluştu</h2>
+        <p class="lead">@Model.RequestId</p>
+        
+        <a href="/" class="btn btn-primary btn-lg">Ana Sayfaya Dön</a>
+    </div>
+</div>

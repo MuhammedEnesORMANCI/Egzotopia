@@ -1,0 +1,79 @@
+﻿@page
+@model Egzotopia.Pages.Admin.AdminDashboardModel
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Admin Panel";
+    Layout = "_AdminLayout";
+
+    // Rolü kontrol etmek için alıyoruz
+    var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+}
+
+<div class="container-fluid mt-4">
+    <h1 class="mb-4">📊 Admin Paneli</h1>
+
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card bg-primary text-white h-100 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Aktif Kategoriler</h5>
+                    <p class="card-text small">Ürün bulunan hayvan türleri</p>
+                    <h2 class="display-4">@Model.ActiveCategories</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card bg-success text-white h-100 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Toplam Ürün</h5>
+                    <p class="card-text small">Stoktaki tüm ürünler</p>
+                    <h2 class="display-4">@Model.TotalProducts</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card bg-info text-white h-100 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Toplam Sipariş</h5>
+                    <p class="card-text small">Alınan sipariş adedi</p>
+                    <h2 class="display-4">@Model.TotalOrders</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card bg-warning text-white h-100 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Toplam Gelir</h5>
+                    <p class="card-text small">Kazanç durumu</p>
+                    <h2 class="display-6">@Model.TotalRevenue.ToString("C2")</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    🚀 Hızlı İşlemler
+                </div>
+                <div class="card-body d-flex gap-2 flex-wrap">
+                    <a href="/Admin/ManageAnimals" class="btn btn-primary btn-lg">🦁 API Hayvan Listesi</a>
+
+                    <a href="/Admin/ManageProducts" class="btn btn-success btn-lg">🛍️ Ürün Yönetimi</a>
+
+                    <a href="/Admin/Orders" class="btn btn-info btn-lg text-white">📦 Siparişler</a>
+
+                    @if (userRole == "2")
+                    {
+                        <a href="/Admin/ManageUsers" class="btn btn-warning btn-lg">👥 Kullanıcıları Yönet</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

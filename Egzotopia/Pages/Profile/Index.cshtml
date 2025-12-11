@@ -1,0 +1,145 @@
+﻿@page
+@model Egzotopia.Pages.Profile.IndexModel
+@{
+    ViewData["Title"] = "Profilim";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="bi bi-person-circle text-primary" style="font-size: 4rem;"></i>
+                    </div>
+                    <h4>@Model.CurrentUser.FullName</h4>
+                    <p class="text-muted">@Model.CurrentUser.Email</p>
+                    <hr />
+                    <div class="d-grid gap-2">
+                        <a href="/Profile/Edit" class="btn btn-outline-primary">
+                            <i class="bi bi-pencil-square"></i> Bilgileri Düzenle
+                        </a>
+                        <a href="/Profile/ChangePassword" class="btn btn-outline-danger">
+                            <i class="bi bi-key"></i> Şifre Değiştir
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">📦 Sipariş Geçmişim</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.UserOrders.Count == 0)
+                    {
+                        <div class="alert alert-info">
+                            Henüz bir siparişiniz bulunmuyor. <a href="/Products">Alışverişe Başla!</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>Sipariş No</th>
+                                        <th>Tarih</th>
+                                        <th>Tutar</th>
+                                        <th>Durum</th>
+                                        <th>Detay</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @* 1. DÖNGÜ: Sadece Tablo Satırlarını Oluşturur *@
+                                    @foreach (var order in Model.UserOrders)
+                                    {
+                                        <tr>
+                                            <td class="fw-bold">#@order.Id</td>
+                                            <td>@order.OrderDate.ToString("dd.MM.yyyy")</td>
+                                            <td class="text-success fw-bold">@order.TotalAmount.ToString("C2")</td>
+                                            <td>
+                                                <span class="badge bg-secondary">@order.Status</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-outline-dark"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalOrder-@order.Id">
+                                                    <i class="bi bi-eye-fill"></i> İncele
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.UserOrders != null && Model.UserOrders.Count > 0)
+{
+    @foreach (var order in Model.UserOrders)
+    {
+        <div class="modal fade" id="modalOrder-@order.Id" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title">
+                            <i class="bi bi-box-seam"></i> Sipariş Detayı (#@order.Id)
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="text-muted small mb-3">
+                            Sipariş Tarihi: @order.OrderDate.ToString("dd MMMM yyyy HH:mm") <br />
+                            Teslimat Adresi: @order.Address, @order.City
+                        </p>
+
+                        <table class="table table-sm table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Ürün Adı</th>
+                                    <th class="text-center">Adet</th>
+                                    <th class="text-end">Birim Fiyat</th>
+                                    <th class="text-end">Toplam</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in order.OrderItems)
+                                {
+                                    <tr>
+                                        <td>@item.ProductName</td>
+                                        <td class="text-center">@item.Quantity</td>
+                                        <td class="text-end">@item.UnitPrice.ToString("C2")</td>
+                                        <td class="text-end">
+                                            @((item.UnitPrice * item.Quantity).ToString("C2"))
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="text-end fw-bold">Genel Toplam:</td>
+                                    <td class="text-end fw-bold text-success">@order.TotalAmount.ToString("C2")</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+}

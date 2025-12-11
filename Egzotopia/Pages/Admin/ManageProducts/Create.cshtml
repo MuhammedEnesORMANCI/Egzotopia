@@ -1,0 +1,80 @@
+﻿@page
+@model Egzotopia.Pages.Admin.ManageProducts.CreateModel
+@{
+    ViewData["Title"] = "Yeni Ürün Ekle";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">🛍️ Yeni Ürün Ekle</h4>
+                    <a href="/Admin/ManageProducts" class="btn btn-sm btn-light text-success fw-bold">Listeye Dön</a>
+                </div>
+                <div class="card-body">
+
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Ürün Adı</label>
+                            <input type="text" name="Product.Name" class="form-control" placeholder="Örn: Papağan Yemi" required />
+                            @* <span asp-validation-for="Product.Name" class="text-danger"></span> *@
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold text-primary">Hayvan Türü (AnimalType)</label>
+                            <div class="input-group">
+                                <input type="text" name="Product.AnimalType" class="form-control" placeholder="Örn: lion, parrot, snake (Küçük harf)" required />
+                                <a href="/Admin/ManageAnimals" target="_blank" class="btn btn-outline-primary" title="Doğru ismi bulmak için tıkla">
+                                    🔍 API'den İsim Bul
+                                </a>
+                            </div>
+                            <small class="text-muted">Dikkat: Buraya yazdığınız isim API'deki isimle (İngilizce) aynı olmalıdır.</small>
+                            @* <span asp-validation-for="Product.AnimalType" class="text-danger"></span> *@
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Fiyat (₺)</label>
+                                <input type="number" step="0.01" name="Product.Price" class="form-control" required />
+                                @* <span asp-validation-for="Product.Price" class="text-danger"></span> *@
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Stok Adedi</label>
+                                <input type="number" name="Product.StockQuantity" class="form-control" required />
+                                @* <span asp-validation-for="Product.StockQuantity" class="text-danger"></span> *@
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Ürün Kategorisi</label>
+                            <select name="Product.ProductType" class="form-select" required>
+                                <option value="">Seçiniz...</option>
+                                <option value="Yem">Yem</option>
+                                <option value="Kafes">Kafes / Teraryum</option>
+                                <option value="Aksesuar">Aksesuar</option>
+                                <option value="Oyuncak">Oyuncak</option>
+                                <option value="Bakım">Bakım Ürünü</option>
+                            </select>
+                            @* <span asp-validation-for="Product.ProductType" class="text-danger"></span> *@
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Resim URL</label>
+                            <input type="url" name="Product.ImageUrl" class="form-control" placeholder="https://..." />
+                            <small class="text-muted">İnternetten bir resim linki yapıştırın.</small>
+                            @* <span asp-validation-for="Product.ImageUrl" class="text-danger"></span> *@
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 btn-lg mt-3">✅ Ürünü Kaydet</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

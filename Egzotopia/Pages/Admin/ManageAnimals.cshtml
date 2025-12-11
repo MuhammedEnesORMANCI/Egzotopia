@@ -1,0 +1,89 @@
+﻿@page
+@model Egzotopia.Pages.Admin.ManageAnimalsModel
+@{
+    ViewData["Title"] = "Hayvan Ara (API)";
+    Layout = "_AdminLayout";
+}
+
+<div class="container-fluid mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>🌍 Hayvan Arama Rehberi</h1>
+        <small class="text-muted">API Veritabanı</small>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form method="get" class="row g-3">
+                <div class="col-md-10">
+                    <input type="text" name="SearchQuery" class="form-control form-control-lg"
+                           placeholder="Hayvan adı girin (İngilizce: Lion, Eagle, Shark...)"
+                           value="@Model.SearchQuery" />
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">🔍 API'de Ara</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-warning">@Model.ErrorMessage</div>
+    }
+
+    @if (Model.SearchResults != null && Model.SearchResults.Any())
+    {
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                Sonuçlar
+            </div>
+            <div class="card-body">
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Tür Adı (AnimalType)</th>
+                            <th>Bilimsel Ad</th>
+                            <th>Habitat</th>
+                            <th>Beslenme</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var animal in Model.SearchResults)
+                        {
+                            <tr>
+                                <td>
+                                    <span class="badge bg-primary fs-6" id="name-@animal.name">@animal.name</span>
+                                </td>
+                                <td>@animal.taxonomy?.scientific_name</td>
+                                <td>@animal.characteristics?.habitat</td>
+                                <td>@animal.characteristics?.diet</td>
+                                <td>
+                                    <button onclick="copyToClipboard('@animal.name')" class="btn btn-outline-dark btn-sm">
+                                        📋 İsmi Kopyala
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else if (string.IsNullOrEmpty(Model.SearchQuery))
+    {
+        <div class="alert alert-info">
+            Ürün eklemeden önce, hayvanın doğru İngilizce ismini (AnimalType) bulmak için buradan arama yapabilirsiniz.
+        </div>
+    }
+</div>
+
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            alert(text + " kopyalandı! Ürün eklerken 'Hayvan Türü' kısmına yapıştırabilirsin.");
+        }, function(err) {
+            console.error('Kopyalama hatası: ', err);
+            });
+        }
+</script>

@@ -1,0 +1,75 @@
+﻿@page
+@model Egzotopia.Pages.SearchAnimalsModel
+@{
+    ViewData["Title"] = "Hayvan Ara";
+}
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-primary">🔍 Egzotik Hayvan Arama</h1>
+        <p class="lead text-muted">Aradığınız hayvanın ismini İngilizce olarak girin.</p>
+    </div>
+
+    <div class="card shadow mb-5 p-4 bg-light">
+        <form method="get" class="row g-3 justify-content-center">
+            <div class="col-md-8">
+                <input type="text" name="Query" class="form-control form-control-lg"
+                       placeholder="Örn: Eagle, Elephant, Shark..."
+                       value="@Model.Query" required />
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Ara</button>
+            </div>
+        </form>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger text-center">@Model.ErrorMessage</div>
+    }
+    else if (Model.Results.Any())
+    {
+        <h3 class="mb-4">@Model.Query için (@Model.Results.Count) Sonuç</h3>
+        <div class="row">
+            @foreach (var animal in Model.Results)
+            {
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm border-0 hover-card">
+                        <div class="position-relative" style="height: 180px; overflow: hidden;">
+                            <img src="@animal.ImageUrl"
+                                 class="card-img-top w-100 h-100"
+                                 style="object-fit: cover;"
+                                 alt="@animal.Name"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300?text=Resim+Yok';">
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title text-success">@animal.Name</h5>
+                            <p class="card-text small text-muted text-truncate">@animal.ScientificName</p>
+
+                            <a href="/AnimalDetail?name=@animal.Name" class="btn btn-outline-primary w-100 btn-sm mt-2">
+                                Detayları Gör
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(Model.Query) && !Model.Results.Any())
+    {
+        <div class="alert alert-warning text-center">
+            <h4>Hiçbir sonuç bulunamadı.</h4>
+            <p>Lütfen farklı bir arama terimi deneyin.</p>
+        </div>
+    }
+</div>
+
+<style>
+    .hover-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        transition: all 0.3s ease;
+    }
+</style>

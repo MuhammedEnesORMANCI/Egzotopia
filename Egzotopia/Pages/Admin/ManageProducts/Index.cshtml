@@ -1,0 +1,94 @@
+﻿@page "/Admin/ManageProducts"
+@model Egzotopia.Pages.Admin.ManageProducts.IndexModel
+@{
+    ViewData["Title"] = "Ürün Yönetimi";
+    Layout = "_AdminLayout";
+}
+
+<div class="container-fluid mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>🛍️ Ürün Yönetimi</h1>
+        <a href="/Admin/ManageProducts/Create" class="btn btn-success btn-lg">
+            <i class="bi bi-plus-circle"></i> + Yeni Ürün Ekle
+        </a>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-warning alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-info-circle-fill"></i> @Model.Message
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h6 class="m-0 font-weight-bold">Mevcut Ürünler</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Resim</th>
+                            <th>Ürün Adı</th>
+                            <th>Fiyat</th>
+                            <th>Stok</th>
+                            <th style="width: 200px;">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in Model.Products)
+                        {
+                            <tr>
+                                <td>@product.Id</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                    {
+                                        <img src="@product.ImageUrl" alt="img" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;" />
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted small">Yok</span>
+                                    }
+                                </td>
+                                <td class="fw-bold">@product.Name</td>
+                                <td>@product.Price.ToString("C2")</td>
+                                <td>@product.StockQuantity</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+
+                                        <a href="/Admin/ManageProducts/Edit/@product.Id" class="btn btn-warning btn-sm">
+                                            ✏️ Düzenle
+                                        </a>
+
+                                        <form method="post">
+                                            @Html.AntiForgeryToken()
+
+                                            <input type="hidden" name="id" value="@product.Id" />
+
+                                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Silmek istediğine emin misin?');">
+                                                🗑️ Sil
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+                        @if (Model.Products.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="6" class="text-center p-4 text-muted">
+                                    Veritabanında ürün bulunamadı veya liste boş geldi.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+﻿@page
+@model Egzotopia.Pages.LoginModel
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-lg border-0 rounded-3">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-success">🦁 Hoşgeldiniz</h2>
+                        <p class="text-muted">Hesabınıza giriş yapın</p>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="alert alert-danger text-center fw-bold">
+                            @Model.ErrorMessage
+                        </div>
+                    }
+
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">E-posta</label>
+                            <input type="email" name="Email" class="form-control form-control-lg" placeholder="user@example.com" required />
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Şifre</label>
+                            <input type="password" name="Password" class="form-control form-control-lg" placeholder="••••••" required />
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 btn-lg shadow-sm">Giriş Yap</button>
+                    </form>
+
+                    <hr class="my-4">
+
+                    <div class="text-center">
+                        <p class="mb-0">Hesabın yok mu? <a href="/Register" class="text-decoration-none fw-bold">Hemen Kaydol</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

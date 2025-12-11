@@ -1,0 +1,110 @@
+﻿@page
+@model Egzotopia.Pages.CheckoutModel
+@{
+    ViewData["Title"] = "Ödeme";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="text-center mb-4">
+                <h2>💳 Güvenli Ödeme</h2>
+                <p class="text-muted">Prototip Modu: Bilgiler otomatik doldurulmuştur.</p>
+            </div>
+
+            <div class="card shadow-lg border-0 rounded-3">
+                <div class="card-header bg-dark text-white py-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Toplam Tutar</span>
+                        <span class="fs-4">@Model.Total.ToString("C2")</span>
+                    </div>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold text-success">📧 Sipariş Onayı İçin E-posta</label>
+
+                            <input type="email" name="UserEmail" class="form-control form-control-lg border-success"
+                                   value="@Model.UserEmail"
+                                   readonly required>
+
+                            <span asp-validation-for="UserEmail" class="text-danger fw-bold mt-1 d-block"></span>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Kart Üzerindeki İsim</label>
+                            <input type="text" name="CardName" value="@Model.CardName" class="form-control" placeholder="Ad Soyad">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Kart Numarası</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-credit-card-2-front"></i></span>
+                                <input type="text" name="CardNumber" value="@Model.CardNumber" class="form-control" placeholder="0000 0000 0000 0000">
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <label class="form-label fw-bold">Son Kullanma (Ay/Yıl)</label>
+                                <div class="d-flex gap-2">
+                                    <input type="text" name="ExpiryMonth" value="@Model.ExpiryMonth" class="form-control" placeholder="MM">
+                                    <input type="text" name="ExpiryYear" value="@Model.ExpiryYear" class="form-control" placeholder="YY">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-bold">CVV / CVC</label>
+                                <div class="input-group">
+                                    <input type="text" name="CVV" value="@Model.CVV" class="form-control" placeholder="123">
+                                    <span class="input-group-text"><i class="bi bi-question-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-light border small text-muted">
+                            <i class="bi bi-shield-lock-fill text-success"></i>
+                            Bu bir prototip ödeme ekranıdır. Kart bilgileri sunucuya gönderilmez ve kaydedilmez.
+                            Hazır dolu gelen bilgileri kullanarak devam edebilirsiniz.
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 py-3 fw-bold shadow hover-scale">
+                            <i class="bi bi-check-lg"></i> Ödemeyi Tamamla (@Model.Total.ToString("C2"))
+                        </button>
+
+                        <div class="text-center mt-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" height="20" class="mx-1" style="opacity: 0.6;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" height="20" class="mx-1" style="opacity: 0.6;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" height="20" class="mx-1" style="opacity: 0.6;">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="/Cart" class="text-decoration-none text-secondary">
+                    <i class="bi bi-arrow-left"></i> Sepete Geri Dön
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .hover-scale {
+        transition: transform 0.2s;
+    }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+</style>

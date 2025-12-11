@@ -1,0 +1,132 @@
+﻿@page "/Animals"
+@model Egzotopia.Pages.AnimalsModel
+@{
+    ViewData["Title"] = "Hayvanlar";
+
+    // Aktif kategoriyi anlamak için basit bir değişken
+    var currentCat = Model.SelectedCategory;
+}
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-success">🦁 Egzotik Keşif</h1>
+        <p class="lead text-muted">Doğanın en vahşi üyelerini kategorilere göre keşfedin.</p>
+    </div>
+
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
+        <a href="/Animals" class="btn @(string.IsNullOrEmpty(currentCat) ? "btn-success" : "btn-outline-success") rounded-pill px-4">
+            🌍 Tümü
+        </a>
+        <a href="/Animals?SelectedCategory=BigCats" class="btn @(currentCat == "BigCats" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🐯 Büyük Kediler
+        </a>
+        <a href="/Animals?SelectedCategory=Canines" class="btn @(currentCat == "Canines" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🐺 Köpekgiller
+        </a>
+        <a href="/Animals?SelectedCategory=Savana" class="btn @(currentCat == "Savana" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🐘 Savana
+        </a>
+        <a href="/Animals?SelectedCategory=Marine" class="btn @(currentCat == "Marine" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🐬 Deniz Canlıları
+        </a>
+        <a href="/Animals?SelectedCategory=Primates" class="btn @(currentCat == "Primates" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🐒 Primatlar
+        </a>
+        <a href="/Animals?SelectedCategory=Reptiles" class="btn @(currentCat == "Reptiles" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🐍 Sürüngenler
+        </a>
+        <a href="/Animals?SelectedCategory=Birds" class="btn @(currentCat == "Birds" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🦜 Kuşlar
+        </a>
+        <a href="/Animals?SelectedCategory=Asia_Oceania" class="btn @(currentCat == "Asia_Oceania" ? "btn-success" : "btn-outline-success") rounded-pill">
+            🐼 Asya & Okyanusya
+        </a>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger text-center">@Model.ErrorMessage</div>
+    }
+
+    @if (Model.IsLoading)
+    {
+        <div class="text-center p-5">
+            <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden">Yükleniyor...</span>
+            </div>
+            <p class="mt-3 text-muted">Vahşi yaşam yükleniyor...</p>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var animal in Model.Animals)
+            {
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm border-0 hover-card">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="@animal.ImageUrl"
+                                 class="card-img-top w-100 h-100"
+                                 style="object-fit: cover; transition: transform 0.5s;"
+                                 alt="@animal.Name"
+                                 loading="lazy"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300?text=Resim+Yok';">
+
+                            <div class="position-absolute bottom-0 start-0 w-100 bg-gradient-dark p-2 text-white">
+                                <h5 class="m-0 text-center text-uppercase fw-bold" style="text-shadow: 1px 1px 2px black;">
+                                    @animal.Name
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text small text-muted mb-1">
+                                <i class="bi bi-book me-1"></i> @animal.ScientificName
+                            </p>
+                            <p class="card-text small mb-3 text-truncate" title="@animal.Habitat">
+                                <i class="bi bi-geo-alt-fill text-danger me-1"></i> @animal.Habitat
+                            </p>
+
+                            <a href="/AnimalDetail?name=@animal.Name" class="btn btn-outline-success w-100 btn-sm rounded-pill stretched-link">
+                                İncele & Ürünler
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        @if (Model.Animals.Count == 0)
+        {
+            <div class="alert alert-warning text-center">
+                Bu kategoride gösterilecek hayvan bulunamadı veya API yanıt vermedi. Lütfen sayfayı yenileyin.
+            </div>
+        }
+    }
+</div>
+
+<style>
+    .bg-gradient-dark {
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    }
+
+    .hover-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+            .hover-card:hover img {
+                transform: scale(1.1);
+            }
+
+    /* Seçili Kategori Butonu Stili */
+    .btn-success {
+        background-color: #198754;
+        border-color: #198754;
+        color: white;
+    }
+</style>

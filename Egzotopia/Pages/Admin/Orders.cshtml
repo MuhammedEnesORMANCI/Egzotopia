@@ -1,0 +1,234 @@
+﻿@page
+@model Egzotopia.Pages.Admin.OrdersModel
+@{
+    ViewData["Title"] = "Sipariş Yönetimi";
+    Layout = "_AdminLayout";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="container-fluid mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="h3 text-gray-800 fw-bold"><i class="bi bi-box-seam-fill text-primary"></i> Sipariş Yönetimi</h1>
+            <p class="text-muted small mb-0">Toplam @Model.Orders.Count sipariş listeleniyor.</p>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4 bg-light">
+        <div class="card-body py-3">
+            <form method="get" class="row g-2 align-items-center">
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" name="SearchString" value="@Model.SearchString" class="form-control border-start-0" placeholder="Sipariş No, İsim veya Email..." />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <select name="StatusFilter" class="form-select" onchange="this.form.submit()">
+                        <option value="">Tüm Durumlar</option>
+                        <option value="Onaylandı" selected="@(Model.StatusFilter == "Onaylandı")">Onaylandı</option>
+                        <option value="Hazırlanıyor" selected="@(Model.StatusFilter == "Hazırlanıyor")">Hazırlanıyor</option>
+                        <option value="Kargoda" selected="@(Model.StatusFilter == "Kargoda")">Kargoda</option>
+                        <option value="Teslim Edildi" selected="@(Model.StatusFilter == "Teslim Edildi")">Teslim Edildi</option>
+                        <option value="İptal" selected="@(Model.StatusFilter == "İptal")">İptal</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100 fw-bold">Uygula</button>
+                </div>
+                <div class="col-md-2">
+                    <a href="/Admin/Orders" class="btn btn-outline-secondary w-100">Temizle</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card shadow border-0 overflow-hidden">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light text-uppercase small text-secondary">
+                    <tr>
+                        <th class="ps-4">No</th>
+                        <th>Müşteri Bilgisi</th>
+                        <th>Tarih</th>
+                        <th class="text-center">İçerik</th>
+                        <th>Tutar</th>
+                        <th>Durum</th>
+                        <th class="text-end pe-4">Detay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model.Orders)
+                    {
+                        <tr>
+                            <td class="ps-4 fw-bold text-primary">#@order.Id</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-2 border" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-person-fill text-secondary fs-5"></i>
+                                    </div>
+                                    <div>
+                                        <div class="fw-bold text-dark">@order.FullName</div>
+                                        <div class="text-muted small" style="font-size: 0.8rem;">@order.Email</div>
+                                        @if (order.UserId != null)
+                                        {
+                                            <span class="badge bg-info text-dark" style="font-size: 0.65rem;">Üye</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary" style="font-size: 0.65rem;">Misafir</span>
+                                        }
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>@order.OrderDate.ToString("dd.MM.yyyy")</div>
+                                <small class="text-muted">@order.OrderDate.ToString("HH:mm")</small>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-light text-dark border">
+                                    @order.OrderItems.Sum(i => i.Quantity) Ürün
+                                </span>
+                            </td>
+                            <td class="fw-bold text-success">@order.TotalAmount.ToString("C2")</td>
+                            <td>
+                                <span class="badge rounded-pill px-3 py-2 bg-@GetStatusColor(order.Status)">@order.Status</span>
+                            </td>
+                            <td class="text-end pe-4">
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-@order.Id">
+                                    Yönet <i class="bi bi-chevron-right ms-1"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+
+                    @if (Model.Orders.Count == 0)
+                    {
+                        <tr>
+                            <td colspan="7" class="text-center py-5 text-muted">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="bi bi-inbox fs-1 mb-2 opacity-25"></i>
+                                    <span>Kriterlere uygun sipariş bulunamadı.</span>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@foreach (var order in Model.Orders)
+{
+    <div class="modal fade" id="modal-@order.Id" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">📦 Sipariş Yönetimi (#@order.Id)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-secondary">Teslimat Bilgileri:</h6>
+                            <div class="p-3 bg-light rounded border">
+                                <p class="mb-1 fw-bold">@order.FullName</p>
+                                <p class="mb-1">@order.Address</p>
+                                <p class="mb-1">@order.City / @order.PostalCode</p>
+                                <p class="mb-0"><i class="bi bi-telephone"></i> @order.Phone</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-secondary">Ödeme & Durum:</h6>
+                            <div class="p-3 bg-light rounded border">
+                                <p class="mb-1"><strong>Ödeme:</strong> @(order.PaymentMethod ?? "Kredi Kartı")</p>
+                                <p class="mb-1"><strong>Tarih:</strong> @order.OrderDate</p>
+                                <p class="mb-0"><strong>Mevcut Durum:</strong> <span class="badge bg-@GetStatusColor(order.Status)">@order.Status</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h6 class="fw-bold text-secondary mt-2">Ürün Listesi:</h6>
+                    <table class="table table-bordered table-sm mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Ürün Adı</th>
+                                <th class="text-center">Adet</th>
+                                <th class="text-end">Birim Fiyat</th>
+                                <th class="text-end">Toplam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in order.OrderItems)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td class="text-center">@item.Quantity</td>
+                                    <td class="text-end">@item.UnitPrice.ToString("C2")</td>
+                                    <td class="text-end">@((item.UnitPrice * item.Quantity).ToString("C2"))</td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot class="table-group-divider">
+                            <tr>
+                                <td colspan="3" class="text-end fw-bold">Genel Toplam:</td>
+                                <td class="text-end fw-bold text-success fs-5">@order.TotalAmount.ToString("C2")</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="modal-footer bg-light justify-content-between">
+
+                    <form method="post" asp-page-handler="DeleteOrder" onsubmit="return confirm('Bu siparişi silmek istediğinize emin misiniz?');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="orderId" value="@order.Id" />
+                        <button type="submit" class="btn btn-outline-danger">
+                            <i class="bi bi-trash-fill me-1"></i> Siparişi Sil
+                        </button>
+                    </form>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <form method="post" asp-page-handler="UpdateStatus" class="d-flex gap-2">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="orderId" value="@order.Id" />
+
+                            <select name="newStatus" class="form-select form-select-sm" style="min-width: 150px;">
+                                <option value="Onaylandı" selected="@(order.Status == "Onaylandı")">Onaylandı</option>
+                                <option value="Hazırlanıyor" selected="@(order.Status == "Hazırlanıyor")">Hazırlanıyor</option>
+                                <option value="Kargoda" selected="@(order.Status == "Kargoda")">Kargoda</option>
+                                <option value="Teslim Edildi" selected="@(order.Status == "Teslim Edildi")">Teslim Edildi</option>
+                                <option value="İptal" selected="@(order.Status == "İptal")">İptal</option>
+                            </select>
+
+                            <button type="submit" class="btn btn-success btn-sm text-nowrap">
+                                <i class="bi bi-check-lg me-1"></i> Güncelle
+                            </button>
+                        </form>
+
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@functions {
+    string GetStatusColor(string status)
+    {
+        return status switch
+        {
+            "Onaylandı" => "info text-dark",      // Açık mavi
+            "Hazırlanıyor" => "warning text-dark", // Sarı
+            "Kargoda" => "primary",               // Koyu Mavi
+            "Teslim Edildi" => "success",         // Yeşil
+            "İptal" => "danger",                  // Kırmızı
+            _ => "secondary"                      // Gri
+        };
+    }
+}

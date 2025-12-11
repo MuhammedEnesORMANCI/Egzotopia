@@ -1,0 +1,1240 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\profile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\profile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\profile\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\profile\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\profile\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\profile\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\checkout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\checkout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\profile\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\profile\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\orders.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\orders.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageusers\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageusers\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageproducts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageproducts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageproducts\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageproducts\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\animaldetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\animaldetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\animaldetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\animaldetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\animals.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\animals.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\products.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\products.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\productdetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\productdetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\animals.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\animals.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\services\\concrete\\animalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\services\\concrete\\animalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageanimals.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageanimals.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageusers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageusers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageproducts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageproducts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageproducts\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageproducts\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageproducts\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageproducts\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\adminbasepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\adminbasepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\ordersuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\ordersuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\ordersuccess.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\ordersuccess.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\services\\concrete\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\services\\concrete\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\searchanimals.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\searchanimals.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\searchanimals.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\searchanimals.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\services\\abstract\\ianimalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\services\\abstract\\ianimalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\pexelsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\pexelsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\services\\abstract\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\services\\abstract\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\about.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\about.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\manageanimals.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\manageanimals.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\confirmregister.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\confirmregister.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\data\\egzotopiadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\data\\egzotopiadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|c:\\users\\muhmm\\onedrive\\masa\u00FCst\u00FC\\egzotopia\\egzotopia\\pages\\confirmregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{855809DB-CE94-4074-89F4-6593227C8DB3}|Egzotopia\\Egzotopia.csproj|solutionrelative:egzotopia\\pages\\confirmregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 316,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductDetail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ProductDetail.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\ProductDetail.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ProductDetail.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\ProductDetail.cshtml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwCwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T23:26:52.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ProductDetail.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\ProductDetail.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ProductDetail.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\ProductDetail.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAG4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T23:26:33.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:42:31.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageUsers\\Edit.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwDsAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T21:42:22.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangePassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\ChangePassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Profile\\ChangePassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\ChangePassword.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Profile\\ChangePassword.cshtml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T01:49:45.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Profile\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Edit.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Profile\\Edit.cshtml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwD0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T01:45:53.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Profile\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Index.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Profile\\Index.cshtml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T01:45:39.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Profile\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\ChangePassword.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Profile\\ChangePassword.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T01:45:33.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Profile\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Edit.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Profile\\Edit.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T01:45:23.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Profile\\Index.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Profile\\Index.cshtml",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAwIAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T01:45:13.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "OrderSuccess.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\OrderSuccess.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\OrderSuccess.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\OrderSuccess.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\OrderSuccess.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T00:13:11.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Checkout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Checkout.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Checkout.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Checkout.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Checkout.cshtml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAA0wDEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T00:09:50.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Checkout.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Checkout.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T00:09:44.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\CartItem.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T23:05:41.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T21:18:42.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageProducts\\Edit.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T21:18:35.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OrderSuccess.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\OrderSuccess.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\OrderSuccess.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\OrderSuccess.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\OrderSuccess.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T21:11:39.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Egzotopia\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Egzotopia\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-09T03:57:53.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Egzotopia\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Egzotopia\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-09T03:54:51.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SearchAnimals.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\SearchAnimals.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\SearchAnimals.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\SearchAnimals.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\SearchAnimals.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:50:48.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SearchAnimals.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\SearchAnimals.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\SearchAnimals.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\SearchAnimals.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\SearchAnimals.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowDYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T03:50:28.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T03:36:04.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:36:02.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Logout.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T03:35:52.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:35:49.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwD8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:32:37.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Login.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T03:33:09.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PexelsResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\PexelsResponse.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\PexelsResponse.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\PexelsResponse.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\PexelsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:26:27.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Concrete\\ProductService.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Services\\Concrete\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Concrete\\ProductService.cs",
+              "RelativeToolTip": "Egzotopia\\Services\\Concrete\\ProductService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:14:41.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Abstract\\IProductService.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Services\\Abstract\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Abstract\\IProductService.cs",
+              "RelativeToolTip": "Egzotopia\\Services\\Abstract\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:12:03.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAmwJoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T03:05:38.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\About.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\About.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\About.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:27:54.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AnimalDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\AnimalDetail.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\AnimalDetail.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\AnimalDetail.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\AnimalDetail.cshtml",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAAKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:28:04.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Animals.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Animals.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Animals.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Animals.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Animals.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:27:56.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Program.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Program.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Program.cs",
+              "RelativeToolTip": "Egzotopia\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:03:53.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Animals.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Animals.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Animals.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Animals.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Animals.cshtml.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAgwH8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:27:59.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AnimalDetail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\AnimalDetail.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\AnimalDetail.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\AnimalDetail.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\AnimalDetail.cshtml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFEAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:28:05.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AnimalApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Concrete\\AnimalApiService.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Services\\Concrete\\AnimalApiService.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Concrete\\AnimalApiService.cs",
+              "RelativeToolTip": "Egzotopia\\Services\\Concrete\\AnimalApiService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwvzAAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:52:17.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "About.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\About.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\About.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\About.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\About.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:28:16.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\Orders.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Orders.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\Orders.cshtml",
+              "ViewState": "AgIAANQAAAAAAAAAAAAAAOIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:11:03.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Orders.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Orders.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\Orders.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Orders.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\Orders.cshtml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:41:21.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:58:03.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageProducts\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:58:10.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwDAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:13:02.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAswEcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:54:24.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageProducts\\Index.cshtml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:19:22.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IAnimalService.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Abstract\\IAnimalService.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Services\\Abstract\\IAnimalService.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\Abstract\\IAnimalService.cs",
+              "RelativeToolTip": "Egzotopia\\Services\\Abstract\\IAnimalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:50:33.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ManageAnimals.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:19:42.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ManageAnimals.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageAnimals.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:41:02.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\Animal.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\Animal.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\Animal.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\Animal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:24:30.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\ManageUsers\\Index.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:13:10.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:15:04.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Dashboard.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\Dashboard.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:19:47.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AdminBasePage.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\AdminBasePage.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Admin\\AdminBasePage.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Admin\\AdminBasePage.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Admin\\AdminBasePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:19:28.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\Product.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\Product.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:23:38.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ConfirmRegister.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ConfirmRegister.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\ConfirmRegister.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ConfirmRegister.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\ConfirmRegister.cshtml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:15:01.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "EgZotopiaDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Data\\EgZotopiaDbContext.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Data\\EgZotopiaDbContext.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Data\\EgZotopiaDbContext.cs",
+              "RelativeToolTip": "Egzotopia\\Data\\EgZotopiaDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:20:14.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\Order.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\Order.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvyYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:19:58.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:31:15.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Cart.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Cart.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:28:12.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\User.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:14:02.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Cart.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Cart.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Cart.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Cart.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Cart.cshtml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:28:08.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Egzotopia\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:27:44.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Products.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Products.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Products.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Products.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Products.cshtml.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:14:32.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Products.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Products.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Products.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Products.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Products.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAI4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:14:29.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Register.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Register.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Register.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwvykAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:09:00.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ConfirmRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ConfirmRegister.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\ConfirmRegister.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\ConfirmRegister.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\ConfirmRegister.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:03:41.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Egzotopia\\Pages\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:35:03.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Pages\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Pages\\Register.cshtml.cs",
+              "RelativeToolTip": "Egzotopia\\Pages\\Register.cshtml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwFQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:07:20.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\appsettings.json",
+              "RelativeDocumentMoniker": "Egzotopia\\appsettings.json",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\appsettings.json",
+              "RelativeToolTip": "Egzotopia\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-09T01:01:05.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Egzotopia\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Muhmm\\OneDrive\\Masa\u00FCst\u00FC\\Egzotopia\\Egzotopia\\Services\\EmailService.cs",
+              "RelativeToolTip": "Egzotopia\\Services\\EmailService.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:02:45.097Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 344,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 84,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+﻿@page "{id:int}"
+@model Egzotopia.Pages.Admin.ManageUsers.EditModel
+@{
+    ViewData["Title"] = "Kullanıcı Düzenle";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">✏️ Kullanıcı Düzenle</h4>
+                    <a href="/Admin/ManageUsers" class="btn btn-sm btn-light text-dark fw-bold">
+                        <i class="bi bi-arrow-left"></i> Listeye Dön
+                    </a>
+                </div>
+
+                <div class="card-body p-4">
+
+                    @if (Model.EditUser == null)
+                    {
+                        <div class="alert alert-danger">Kullanıcı bulunamadı!</div>
+                    }
+                    else
+                    {
+                        <form method="post">
+                            @Html.AntiForgeryToken()
+
+                            <input type="hidden" name="EditUser.Id" value="@Model.EditUser.Id" />
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Ad Soyad</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input type="text" name="EditUser.FullName" class="form-control" value="@Model.EditUser.FullName" required />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">E-posta Adresi</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input type="email" name="EditUser.Email" class="form-control" value="@Model.EditUser.Email" required />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Kullanıcı Rolü</label>
+                                <select name="EditUser.Role" class="form-select">
+                                    <!option value="0" @(Model.EditUser.Role == 0 ? "selected" : "")>Normal Üye (0)</!option>
+                                    <!option value="1" @(Model.EditUser.Role == 1 ? "selected" : "")>Yönetici (1)</!option>
+                                    <!option value="2" @(Model.EditUser.Role == 2 ? "selected" : "")>Süper Admin (2)</!option>
+                                </select>
+                            </div>
+
+                            <hr class="my-4" />
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-danger">Yeni Şifre (Opsiyonel)</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                                    <input type="text" name="NewPassword" class="form-control" placeholder="Değiştirmek istemiyorsanız boş bırakın" />
+                                </div>
+                                <small class="text-muted">Eski şifre: <strong>@Model.EditUser.Password</strong> (Değişmeyecek)</small>
+                            </div>
+
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-warning btn-lg fw-bold shadow-sm">
+                                    <i class="bi bi-save"></i> Değişiklikleri Kaydet
+                                </button>
+                            </div>
+
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

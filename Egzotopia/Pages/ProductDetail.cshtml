@@ -1,0 +1,111 @@
+﻿@page "{id:int}"
+@model Egzotopia.Pages.ProductDetailModel
+@{
+    ViewData["Title"] = Model.Product.Name;
+}
+
+@Html.AntiForgeryToken()
+
+<div class="container mt-5">
+
+    <div id="toast-container" class="position-fixed top-0 end-0 p-3" style="z-index: 1055">
+        <div id="liveToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toast-message"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <a href="/Products" class="btn btn-outline-secondary mb-4">
+        <i class="bi bi-arrow-left"></i> Ürünlere Dön
+    </a>
+
+    <div class="card shadow-lg border-0">
+        <div class="row g-0">
+            <div class="col-md-6 bg-light d-flex align-items-center justify-content-center p-3">
+                <img src="@Model.Product.ImageUrl" class="img-fluid rounded shadow-sm" style="max-height: 500px; object-fit: contain;" alt="@Model.Product.Name">
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-body p-5">
+
+                    <div class="mb-2">
+                        <span class="badge bg-warning text-dark">@Model.Product.AnimalType</span>
+                        <span class="badge bg-secondary">@Model.Product.ProductType</span>
+                    </div>
+
+                    <h1 class="card-title fw-bold display-6">@Model.Product.Name</h1>
+
+                    <h3 class="text-success fw-bold my-3">@Model.Product.Price.ToString("C2")</h3>
+
+                    <p class="card-text text-muted mb-4" style="line-height: 1.8;">
+                        @(Model.Product.Description ?? "Bu ürün için henüz detaylı açıklama girilmemiştir.")
+                    </p>
+
+                    <hr />
+
+                    <div class="d-flex align-items-center mb-4">
+                        @if (Model.Product.StockQuantity > 0)
+                        {
+                            <span class="text-success fw-bold"><i class="bi bi-check-circle-fill"></i> Stokta Var (@Model.Product.StockQuantity adet)</span>
+                        }
+                        else
+                        {
+                            <span class="text-danger fw-bold"><i class="bi bi-x-circle-fill"></i> Stok Tükendi</span>
+                        }
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg"
+                                onclick="addToCart(@Model.Product.Id, '@Model.Product.Name', @Model.Product.Price)"
+                        @(Model.Product.StockQuantity == 0 ? "disabled" : "")>
+                            <i class="bi bi-cart-plus-fill"></i> Sepete Ekle
+                        </button>
+                    </div>
+
+                    <div class="mt-4 p-3 bg-light rounded small text-muted">
+                        <i class="bi bi-truck"></i> 24 Saatte Kargoda <br>
+                        <i class="bi bi-shield-check"></i> Güvenli Ödeme <br>
+                        <i class="bi bi-arrow-counterclockwise"></i> 14 Gün İade Garantisi
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // AJAX Sepete Ekleme Fonksiyonu
+    function addToCart(id, name, price) {
+        var formData = new FormData();
+        formData.append('productId', id);
+        formData.append('name', name);
+        formData.append('price', price.toString().replace(',', '.'));
+
+        var token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+        fetch('?handler=AddToCart', {
+            method: 'POST',
+            body: formData,
+            headers: { "RequestVerificationToken": token }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showToast(data.message);
+            } else {
+                alert("Hata: " + data.message);
+            }
+        })
+        .catch(error => { console.error('Error:', error); });
+    }
+
+    function showToast(message) {
+        var toastEl = document.getElementById('liveToast');
+        document.getElementById('toast-message').innerText = message;
+        var toast = new bootstrap.Toast(toastEl);
+        toast.show();
+    }
+</script>
