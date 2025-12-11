@@ -3,7 +3,7 @@ using Egzotopia.Services.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Egzotopia.Data;
-using Npgsql; // Npgsql kütüphanesi gerekli
+using Npgsql;
 
 namespace Egzotopia
 {
@@ -36,7 +36,7 @@ namespace Egzotopia
             });
 
             // --------------------------------------------------
-            // 🔴 KRİTİK DÜZELTME: BAĞLANTI ADRESİ DÖNÜŞTÜRME
+            // VERİTABANI BAĞLANTISI
             // --------------------------------------------------
 
             string connectionString = "";
@@ -44,20 +44,17 @@ namespace Egzotopia
 
             if (!string.IsNullOrEmpty(renderConnectionString))
             {
-                // Render'dayız, URL'yi parçalayıp Npgsql formatına çeviriyoruz
+                // Render'dayız, URL'yi dönüştür
                 connectionString = BuildConnectionString(renderConnectionString);
             }
             else
             {
-                // Localdeyiz (Bilgisayarın)
+                // Localdeyiz
                 connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             }
 
-            // PostgreSQL Bağlantısı
             builder.Services.AddDbContext<EgZotopiaDbContext>(options =>
                 options.UseNpgsql(connectionString));
-
-            // --------------------------------------------------
 
             // Logging ve Session
             builder.Logging.ClearProviders();
@@ -72,7 +69,7 @@ namespace Egzotopia
 
             var app = builder.Build();
 
-            // --- TABLO OLUŞTURMA VE VERİ YÜKLEME ---
+            // --- TABLO VE VERİ YÜKLEME ---
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -80,10 +77,10 @@ namespace Egzotopia
                 {
                     var context = services.GetRequiredService<EgZotopiaDbContext>();
 
-                    // 1. Veritabanını oluştur
+                    // 1. Tabloları oluştur
                     context.Database.Migrate();
 
-                    // 2. Seed SQL dosyasını yükle (Sadece boşsa)
+                    // 2. seed.sql dosyasını yükle
                     if (!context.Users.Any())
                     {
                         var sqlFile = Path.Combine(AppContext.BaseDirectory, "seed.sql");
@@ -93,12 +90,15 @@ namespace Egzotopia
                             context.Database.ExecuteSqlRaw(sqlScript);
                             Console.WriteLine("✅ seed.sql başarıyla yüklendi.");
                         }
+                        else
+                        {
+                            Console.WriteLine("⚠️ seed.sql dosyası bulunamadı. (Properties ayarını kontrol et)");
+                        }
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Hatayı logla ama uygulamayı durdurma
-                    Console.WriteLine($"❌ Veritabanı başlatma hatası: {ex.Message}");
+                    Console.WriteLine($"❌ Veritabanı hatası: {ex.Message}");
                 }
             }
 
@@ -113,9 +113,7 @@ namespace Egzotopia
             app.Run();
         }
 
-        // --- YARDIMCI METOT: URL PARÇALAYICI ---
-        // Render'ın verdiği "postgres://user:pass@host/db" formatını
-        // C#'ın istediği "Host=...;Username=..." formatına çevirir.
+        // --- URL PARÇALAYICI (HATA BURADAYDI, DÜZELTİLDİ) ---
         private static string BuildConnectionString(string databaseUrl)
         {
             var databaseUri = new Uri(databaseUrl);
@@ -124,12 +122,13 @@ namespace Egzotopia
             var builder = new NpgsqlConnectionStringBuilder
             {
                 Host = databaseUri.Host,
-                Port = databaseUri.Port,
+                // DÜZELTME BURADA: Eğer Port -1 gelirse, varsayılan 5432 kullan.
+                Port = databaseUri.Port > 0 ? databaseUri.Port : 5432,
                 Username = userInfo[0],
                 Password = userInfo[1],
                 Database = databaseUri.LocalPath.TrimStart('/'),
                 SslMode = SslMode.Require,
-                TrustServerCertificate = true // SSL sertifika hatasını önler
+                TrustServerCertificate = true
             };
 
             return builder.ToString();
